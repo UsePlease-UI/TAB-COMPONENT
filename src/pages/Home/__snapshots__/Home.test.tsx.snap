@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tab Example renders Tab 1`] = `
+<div
+  className="css-1ivaoa4"
+>
+  <div
+    aria-label="navigation"
+    className="css-mmrgdr"
+    elevation={5}
+    height="100px"
+    role="tablist"
+  >
+    <div
+      className="css-18xiljl"
+    >
+      <button
+        aria-controls="tabpanel-1"
+        aria-selected={true}
+        className="css-uralee"
+        id="tab-1"
+        onClick={[Function]}
+        role="tab"
+        type="button"
+      >
+        <p
+          className="css-1a7cru4"
+        >
+          1
+        </p>
+        <div
+          className="css-sof5kk"
+          id="tab-indicator-1"
+        />
+      </button>
+      <button
+        aria-controls="tabpanel-2"
+        aria-selected={false}
+        className="css-uralee"
+        id="tab-2"
+        onClick={[Function]}
+        role="tab"
+        tabIndex={-1}
+        type="button"
+      >
+        <p
+          className="css-17xb983"
+        >
+          2
+        </p>
+      </button>
+      <button
+        aria-controls="tabpanel-3"
+        aria-selected={false}
+        className="css-uralee"
+        id="tab-3"
+        onClick={[Function]}
+        role="tab"
+        tabIndex={-1}
+        type="button"
+      >
+        <p
+          className="css-17xb983"
+        >
+          3
+        </p>
+      </button>
+    </div>
+    <div
+      className="css-44hp3b"
+    />
+  </div>
+  <div
+    className="css-15axuv3"
+    hidden={false}
+    role="tabpanel"
+  >
+    <p>
+      Tab Panel #1
+    </p>
+  </div>
+  <div
+    className="css-15axuv3"
+    hidden={true}
+    role="tabpanel"
+  >
+    <p>
+      Tab Panel #2
+    </p>
+  </div>
+  <div
+    className="css-15axuv3"
+    hidden={true}
+    role="tabpanel"
+  >
+    <p>
+      Tab Panel #3
+    </p>
+  </div>
+</div>
+`;
