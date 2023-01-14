@@ -1,15 +1,26 @@
-export type TabPropsType = {
+/**
+ *  Tab Component
+ */
+export interface ITab {
     children: React.ReactNode;
+}
+
+/**
+ *  Tab Item Component
+ */
+
+export type TabButtonType = {
+    height?: number;
 };
 
-export type TabItemIconPropsType = {
+export type TabItemIconType = {
     iconElement?: React.ReactNode;
     iconSize?: number[];
     iconActiveColor?: string;
     iconInactiveColor?: string;
 };
 
-export type TabItemLabelPropsType = {
+export type TabItemLabelType = {
     labelActiveColor?: string;
     labelInactiveColor?: string;
     labelFont?: string;
@@ -19,44 +30,45 @@ export type TabItemLabelPropsType = {
     labelFontTracking?: string;
 };
 
-export type TabItemIndicatorPropsType = {
+export type TabItemIndicatorType = {
     activeIndicatorColor?: string;
     activeIndicatorWidth?: string;
     activeIndicatorHeight?: string;
     activeIndicatorShape?: number[];
 };
 
-export type TabItemPropsType = {
+export type TabItemStylesType = TabButtonType & TabItemLabelType & TabItemIndicatorType;
+
+export interface ITabItem {
     label: string;
     index: number;
     value: number;
-    icon?: TabItemIconPropsType;
-    styles?: TabItemLabelPropsType;
-    indicator?: TabItemIndicatorPropsType;
+    icon?: TabItemIconType;
+    styles?: TabItemStylesType;
     onClick: (e: React.SyntheticEvent, index: number) => void;
-};
+}
 
-export type TabContainerElevationType = 0 | 1 | 2 | 3 | 4 | 5;
+/**
+ *  Tab List Component
+ */
 
-export type TabListDividerPropsType = {
-    dividerColor?: string;
-    dividerHeight?: string;
-};
-
-export type TabListStylesPropsType = {
+export type TabListStylesType = {
     backgroundColor?: string;
-    elevation?: TabContainerElevationType;
     height?: string;
 };
 
-export type TabListPropsType = {
+export interface ITabList {
     children: React.ReactNode;
-    ariaLabel: string;
-    styles?: TabListStylesPropsType & TabListDividerPropsType;
-};
+    'aria-label': string;
+    styles?: TabListStylesType;
+}
 
-export type TabPanelPropsType = {
+/**
+ *  Tab Panel Component
+ */
+
+export interface ITabPanel {
     children: React.ReactNode;
     value: number;
     index: number;
-};
+}

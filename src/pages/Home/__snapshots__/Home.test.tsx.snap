@@ -2,41 +2,39 @@
 
 exports[`Tab Example renders Tab 1`] = `
 <div
-  className="css-1ivaoa4"
+  className="css-1wirx3w"
 >
   <div
     aria-label="navigation"
-    className="css-mmrgdr"
-    elevation={5}
-    height="100px"
+    className="css-1k39m3u"
     role="tablist"
   >
     <div
-      className="css-18xiljl"
+      className="css-9lc4tj"
     >
       <button
         aria-controls="tabpanel-1"
         aria-selected={true}
-        className="css-uralee"
+        className="css-1naocwp"
         id="tab-1"
         onClick={[Function]}
         role="tab"
         type="button"
       >
         <p
-          className="css-1a7cru4"
+          className="css-1ph9szf"
         >
           1
         </p>
         <div
-          className="css-sof5kk"
+          className="css-3wo3jb"
           id="tab-indicator-1"
         />
       </button>
       <button
         aria-controls="tabpanel-2"
         aria-selected={false}
-        className="css-uralee"
+        className="css-1naocwp"
         id="tab-2"
         onClick={[Function]}
         role="tab"
@@ -44,7 +42,7 @@ exports[`Tab Example renders Tab 1`] = `
         type="button"
       >
         <p
-          className="css-17xb983"
+          className="css-1ybwqpv"
         >
           2
         </p>
@@ -52,7 +50,7 @@ exports[`Tab Example renders Tab 1`] = `
       <button
         aria-controls="tabpanel-3"
         aria-selected={false}
-        className="css-uralee"
+        className="css-1naocwp"
         id="tab-3"
         onClick={[Function]}
         role="tab"
@@ -60,18 +58,15 @@ exports[`Tab Example renders Tab 1`] = `
         type="button"
       >
         <p
-          className="css-17xb983"
+          className="css-1ybwqpv"
         >
           3
         </p>
       </button>
     </div>
-    <div
-      className="css-44hp3b"
-    />
   </div>
   <div
-    className="css-15axuv3"
+    className="css-bc2c4v"
     hidden={false}
     role="tabpanel"
   >
@@ -80,7 +75,7 @@ exports[`Tab Example renders Tab 1`] = `
     </p>
   </div>
   <div
-    className="css-15axuv3"
+    className="css-bc2c4v"
     hidden={true}
     role="tabpanel"
   >
@@ -89,7 +84,7 @@ exports[`Tab Example renders Tab 1`] = `
     </p>
   </div>
   <div
-    className="css-15axuv3"
+    className="css-bc2c4v"
     hidden={true}
     role="tabpanel"
   >

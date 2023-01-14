@@ -1,26 +1,20 @@
-import { lightTabTheme, darkTabTheme } from 'components/theme';
+import { LIGHT_THEME, DARK_THEME } from 'components/theme';
 
 declare module '@emotion/react' {
     export interface Theme {
         colors: {
-            tab: {
-                primary: string;
-                textPrimary: string;
-                background: string;
-                divider: string;
-            };
+            primary: string;
+            textPrimary: string;
+            background: string;
+            divider: string;
         };
     }
 }
 
 export const lightTheme = {
-    colors: {
-        ...lightTabTheme
-    }
+    colors: LIGHT_THEME
 };
 
 export const darkTheme = {
-    colors: {
-        ...darkTabTheme
-    }
+    colors: DARK_THEME
 };

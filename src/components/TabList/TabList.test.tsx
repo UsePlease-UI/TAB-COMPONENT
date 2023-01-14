@@ -1,9 +1,8 @@
 import { ThemeProvider } from '@emotion/react';
 import { render, screen } from '@testing-library/react';
 
+import { TabProvider, TabPanel } from 'components';
 import { lightTheme } from 'styles/theme';
-
-import { TabProvider, TabPanel } from '..';
 
 describe('<TabPanel /> ', () => {
     it('renders Tab Panel with children', () => {

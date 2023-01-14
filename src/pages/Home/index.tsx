@@ -5,8 +5,10 @@ import TabContext from 'components/TabContext/provider';
 
 const tabListStyles = {
     list: {
-        backgroundColor: 'black',
-        elevation: 5 as const,
+        height: '100px',
+        backgroundColor: ''
+    },
+    item: {
         height: '100px'
     },
     divider: {
@@ -14,9 +16,9 @@ const tabListStyles = {
         dividerHeight: '5px'
     },
     label: {
-        labelActiveColor: 'white',
-        labelInactiveColor: 'gray',
-        labelLineHeight: '30px',
+        labelActiveColor: '',
+        labelInactiveColor: '#eeeeee',
+        labelLineHeight: '40px',
         labelFontSize: '40px',
         labelFontWeight: 400 as const,
         labelFontTracking: '0.5rem',
@@ -46,10 +48,10 @@ export default function Home() {
     return (
         <TabContext value={value} setValue={setValue}>
             <Tab>
-                <TabList ariaLabel="navigation" styles={getStyles(tabListStyles.list, tabListStyles.divider)}>
-                    <TabItem styles={tabListStyles.label} label="1" value={value} index={1} onClick={handleClick} />
-                    <TabItem styles={tabListStyles.label} label="2" value={value} index={2} onClick={handleClick} />
-                    <TabItem styles={tabListStyles.label} label="3" value={value} index={3} onClick={handleClick} />
+                <TabList aria-label="navigation" styles={getStyles(tabListStyles.list, tabListStyles.divider)}>
+                    <TabItem styles={getStyles(tabListStyles.item, tabListStyles.label)} label="1" value={value} index={1} onClick={handleClick} />
+                    <TabItem styles={getStyles(tabListStyles.item, tabListStyles.label)} label="2" value={value} index={2} onClick={handleClick} />
+                    <TabItem styles={getStyles(tabListStyles.item, tabListStyles.label)} label="3" value={value} index={3} onClick={handleClick} />
                 </TabList>
                 <TabPanel value={value} index={1}>
                     <p>Tab Panel #1</p>

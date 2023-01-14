@@ -6,9 +6,11 @@ import { ITabContext, ITabProvider } from 'components/TabContext/types';
 export default function TabProvider({ children, value, setValue }: ITabProvider) {
     const linkRefs = Array.from({ length: 3 }).map(() => createRef<HTMLButtonElement>());
 
-    // Keyboard Interaction for Tab List
-    // 1. Left Arrow
-    // 2. Right Arrow
+    /**
+     *  Keyboard Interaction
+     *  1. Left Arrow
+     *  2. Right Arrow
+     */
     useEffect(() => {
         const onKeyDown = (event: KeyboardEvent) => {
             if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {

@@ -13,7 +13,7 @@ describe('App', () => {
                 <App />
             </ThemeProvider>
         );
-        const buttonElement = screen.getByText(/DARK/i);
+        const buttonElement = screen.getByText(/LIGHT/i);
         expect(buttonElement).toBeInTheDocument();
     });
 
@@ -26,7 +26,7 @@ describe('App', () => {
             </ThemeProvider>
         );
 
-        fireEvent.click(screen.getByText(/DARK/i));
-        expect(screen.getByText(/LIGHT/i)).toBeInTheDocument();
+        fireEvent.click(screen.getByText(/LIGHT/i));
+        expect(screen.getByText(/DARK/i)).toBeInTheDocument();
     });
 });
