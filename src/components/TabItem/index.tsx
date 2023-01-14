@@ -16,12 +16,12 @@ const TabButton = styled.button<{ customStyles?: TabItemStylesType }>`
 const TabIcon = styled.div<TabItemIconType & { active: boolean }>`
     width: ${({ iconSize }) => iconSize?.[0] || '10px'};
     height: ${({ iconSize }) => iconSize?.[1] || '10px'};
-    color: ${({ active, iconActiveColor, iconInactiveColor, theme }) => (active ? iconActiveColor || theme.colors.textPrimary : iconInactiveColor || theme.colors.textPrimary)};
+    color: ${({ active, iconActiveColor, iconInactiveColor, theme }) => (active ? iconActiveColor || theme.text.primary : iconInactiveColor || theme.text.inactive)};
 `;
 
 const TabLabel = styled.p<{ customStyles?: TabItemStylesType; active: boolean }>`
     margin: 20px;
-    color: ${({ active, customStyles, theme }) => (active ? customStyles?.labelActiveColor || theme.colors.textPrimary : customStyles?.labelInactiveColor || theme.colors.textPrimary)};
+    color: ${({ active, customStyles, theme }) => (active ? customStyles?.labelActiveColor || theme.text.primary : customStyles?.labelInactiveColor || theme.text.inactive)};
     font-family: ${({ customStyles }) => customStyles?.labelFont};
     line-height: ${({ customStyles }) => customStyles?.labelLineHeight || '1rem'};
     font-size: ${({ customStyles }) => customStyles?.labelFontSize || '1rem'};

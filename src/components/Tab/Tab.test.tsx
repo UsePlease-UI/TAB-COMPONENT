@@ -2,12 +2,12 @@ import { ThemeProvider } from '@emotion/react';
 import { render, screen } from '@testing-library/react';
 
 import { Tab } from 'components';
-import { lightTheme } from 'styles/theme';
+import { LIGHT_THEME } from 'styles/theme';
 
 describe('<Tab />', () => {
     it('renders Tab with children', () => {
         render(
-            <ThemeProvider theme={lightTheme}>
+            <ThemeProvider theme={LIGHT_THEME}>
                 <Tab>children</Tab>
             </ThemeProvider>
         );

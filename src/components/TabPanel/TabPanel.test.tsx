@@ -2,14 +2,14 @@ import { ThemeProvider } from '@emotion/react';
 import { render } from '@testing-library/react';
 
 import { TabProvider, TabPanel } from 'components';
-import { lightTheme } from 'styles/theme';
+import { LIGHT_THEME } from 'styles/theme';
 
 describe('<TabPanel /> ', () => {
     it('renders Tab Panel component', () => {
         const setValue = jest.fn();
 
         const { getByText } = render(
-            <ThemeProvider theme={lightTheme}>
+            <ThemeProvider theme={LIGHT_THEME}>
                 <TabProvider value={1} setValue={setValue}>
                     <TabPanel value={1} index={1}>
                         Tab Panel
@@ -26,7 +26,7 @@ describe('<TabPanel /> ', () => {
         const setValue = jest.fn();
 
         const { getByText } = render(
-            <ThemeProvider theme={lightTheme}>
+            <ThemeProvider theme={LIGHT_THEME}>
                 <TabProvider value={1} setValue={setValue}>
                     <TabPanel value={1} index={1}>
                         Tab Panel

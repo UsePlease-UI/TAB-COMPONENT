@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tab Example renders Tab 1`] = `
+exports[`<HOME /> renders Home Component 1`] = `
 <div
   className="css-1wirx3w"
 >

@@ -2,7 +2,7 @@ import { ThemeProvider } from '@emotion/react';
 import { render, screen } from '@testing-library/react';
 
 import { TabProvider, TabList, TabItem } from 'components';
-import { lightTheme } from 'styles/theme';
+import { LIGHT_THEME } from 'styles/theme';
 
 describe('<TabItem /> ', () => {
     it('renders TabItem with given label', () => {
@@ -10,9 +10,9 @@ describe('<TabItem /> ', () => {
         const onClick = jest.fn();
 
         render(
-            <ThemeProvider theme={lightTheme}>
+            <ThemeProvider theme={LIGHT_THEME}>
                 <TabProvider value={1} setValue={setValue}>
-                    <TabList ariaLabel="navigation">
+                    <TabList aria-label="navigation">
                         <TabItem label="1" value={1} index={1} onClick={onClick} />
                     </TabList>
                 </TabProvider>
@@ -28,9 +28,9 @@ describe('<TabItem /> ', () => {
         const onClick = jest.fn();
 
         render(
-            <ThemeProvider theme={lightTheme}>
+            <ThemeProvider theme={LIGHT_THEME}>
                 <TabProvider value={1} setValue={setValue}>
-                    <TabList ariaLabel="navigation">
+                    <TabList aria-label="navigation">
                         <TabItem label="1" value={1} index={1} onClick={onClick} />
                     </TabList>
                 </TabProvider>
@@ -46,9 +46,9 @@ describe('<TabItem /> ', () => {
         const onClick = jest.fn();
 
         render(
-            <ThemeProvider theme={lightTheme}>
+            <ThemeProvider theme={LIGHT_THEME}>
                 <TabProvider value={1} setValue={setValue}>
-                    <TabList ariaLabel="navigation">
+                    <TabList aria-label="navigation">
                         <TabItem label="1" value={1} index={1} onClick={onClick} />
                     </TabList>
                 </TabProvider>
@@ -64,9 +64,9 @@ describe('<TabItem /> ', () => {
         const onClick = jest.fn();
 
         render(
-            <ThemeProvider theme={lightTheme}>
+            <ThemeProvider theme={LIGHT_THEME}>
                 <TabProvider value={1} setValue={setValue}>
-                    <TabList ariaLabel="navigation">
+                    <TabList aria-label="navigation">
                         <TabItem label="1" value={1} index={1} onClick={onClick} />
                     </TabList>
                 </TabProvider>
@@ -82,9 +82,9 @@ describe('<TabItem /> ', () => {
         const onClick = jest.fn();
 
         render(
-            <ThemeProvider theme={lightTheme}>
+            <ThemeProvider theme={LIGHT_THEME}>
                 <TabProvider value={1} setValue={setValue}>
-                    <TabList ariaLabel="navigation">
+                    <TabList aria-label="navigation">
                         <TabItem label="1" value={1} index={1} onClick={onClick} />
                     </TabList>
                 </TabProvider>
@@ -100,9 +100,9 @@ describe('<TabItem /> ', () => {
         const onClick = jest.fn();
 
         render(
-            <ThemeProvider theme={lightTheme}>
+            <ThemeProvider theme={LIGHT_THEME}>
                 <TabProvider value={1} setValue={setValue}>
-                    <TabList ariaLabel="navigation">
+                    <TabList aria-label="navigation">
                         <TabItem label="2" value={1} index={2} onClick={onClick} />
                     </TabList>
                 </TabProvider>
@@ -125,9 +125,9 @@ describe('<TabItem /> ', () => {
         };
 
         render(
-            <ThemeProvider theme={lightTheme}>
+            <ThemeProvider theme={LIGHT_THEME}>
                 <TabProvider value={1} setValue={setValue}>
-                    <TabList ariaLabel="navigation">
+                    <TabList aria-label="navigation">
                         <TabItem icon={icon} label="1" value={1} index={1} onClick={onClick} />
                     </TabList>
                 </TabProvider>
@@ -143,9 +143,9 @@ describe('<TabItem /> ', () => {
         const onClick = jest.fn();
 
         const { container } = render(
-            <ThemeProvider theme={lightTheme}>
+            <ThemeProvider theme={LIGHT_THEME}>
                 <TabProvider value={1} setValue={setValue}>
-                    <TabList ariaLabel="navigation">
+                    <TabList aria-label="navigation">
                         <TabItem label="1" value={1} index={1} onClick={onClick} />
                     </TabList>
                 </TabProvider>

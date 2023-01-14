@@ -2,11 +2,11 @@
 import { useContext } from 'react';
 
 import { ThemeProvider } from '@emotion/react';
-import { fireEvent, render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import { Tab, TabContext, TabItem, TabList, TabPanel, TabProvider } from 'components';
-import { lightTheme } from 'styles/theme';
+import { Tab, TabContext, TabItem, TabList, TabPanel } from 'components';
+import { LIGHT_THEME } from 'styles/theme';
 import Home from 'pages/Home';
 
 /**
@@ -42,9 +42,9 @@ describe('TabContext ', () => {
 
         expect(() =>
             render(
-                <ThemeProvider theme={lightTheme}>
+                <ThemeProvider theme={LIGHT_THEME}>
                     <Tab>
-                        <TabList ariaLabel="navigation">
+                        <TabList aria-label="navigation">
                             <TabItem label="1" value={1} index={1} onClick={onClick} />
                         </TabList>
                         <TabPanel value={1} index={1}>
@@ -65,7 +65,7 @@ describe('TabContext ', () => {
      */
     test('when press [ArrowRight], next tab should be focused', async () => {
         const { container } = render(
-            <ThemeProvider theme={lightTheme}>
+            <ThemeProvider theme={LIGHT_THEME}>
                 <Home />
             </ThemeProvider>
         );
@@ -91,7 +91,7 @@ describe('TabContext ', () => {
      */
     test('when press [ArrowLeft], previous tab should be focused', async () => {
         const { container } = render(
-            <ThemeProvider theme={lightTheme}>
+            <ThemeProvider theme={LIGHT_THEME}>
                 <Home />
             </ThemeProvider>
         );

@@ -4,7 +4,7 @@ import { ThemeProvider } from '@emotion/react';
 import styled from '@emotion/styled';
 
 import Home from 'pages/Home';
-import { darkTheme, lightTheme } from 'styles/theme';
+import { DARK_THEME, LIGHT_THEME } from 'styles/theme';
 
 const Container = styled.div`
     width: 100%;
@@ -42,7 +42,7 @@ export default function App() {
     const [isDark, setIsDark] = useState(true);
 
     return (
-        <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
+        <ThemeProvider theme={isDark ? DARK_THEME : LIGHT_THEME}>
             <Container>
                 <Wrapper>
                     <ModeButton type="button" active={isDark} onClick={() => setIsDark((prev) => !prev)}>
