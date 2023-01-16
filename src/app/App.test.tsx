@@ -1,8 +1,9 @@
 import { ThemeProvider } from '@emotion/react';
 import { fireEvent, render, screen } from '@testing-library/react';
 
-import { LIGHT_THEME } from 'styles/theme';
 import App from 'app/App';
+
+import { LIGHT_THEME } from 'styles/theme';
 
 describe('App', () => {
     test('renders App', () => {

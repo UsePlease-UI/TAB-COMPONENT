@@ -72,3 +72,8 @@ export interface ITabPanel {
     value: number;
     index: number;
 }
+
+/**
+ *  Style - Elevation
+ */
+export type TabContainerElevationType = 0 | 1 | 2 | 3 | 4 | 5;

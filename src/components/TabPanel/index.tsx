@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { ITabPanel } from 'components/types';
+import type { ITabPanel } from 'components/types';
 
 const TabPanelContainer = styled.div`
     width: 100%;

@@ -1,11 +1,11 @@
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Tab from 'components/Tab';
-import TabList from 'components/TabList';
-import TabItem from 'components/TabItem';
-import TabProvider from 'components/TabContext/provider';
+/* eslint-disable @typescript-eslint/no-empty-function */
+/* eslint-disable react/function-component-definition */
 import { Global, ThemeProvider } from '@emotion/react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+
+import { TabProvider, Tab, TabList, TabItem, TabPanel } from 'components';
 import { DARK_THEME, LIGHT_THEME } from 'components/theme';
-import { TabPanel } from 'components';
+
 import reset from 'styles/reset';
 
 export default {

@@ -25,32 +25,19 @@ module.exports = {
                         position: 'before'
                     },
                     {
-                        pattern: 'slices/**',
-                        group: 'internal',
-                        position: 'before'
-                    },
-                    {
-                        pattern: 'hooks/**',
-                        group: 'internal',
-                        position: 'before'
-                    },
-                    {
-                        pattern: 'assets/**',
+                        pattern: 'components/**',
+                        patternOptions: { partial: true, nocomment: true },
                         group: 'internal',
                         position: 'after'
                     },
                     {
-                        pattern: 'configs/**',
+                        pattern: 'components',
+                        patternOptions: { partial: true, nocomment: true },
                         group: 'internal',
                         position: 'after'
                     },
                     {
-                        pattern: 'constants/**',
-                        group: 'internal',
-                        position: 'after'
-                    },
-                    {
-                        pattern: 'utils/**',
+                        pattern: 'styles/**',
                         group: 'internal',
                         position: 'after'
                     },

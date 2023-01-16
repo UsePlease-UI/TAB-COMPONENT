@@ -5,9 +5,11 @@ import { ThemeProvider } from '@emotion/react';
 import { render } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import { Tab, TabContext, TabItem, TabList, TabPanel } from 'components';
-import { LIGHT_THEME } from 'styles/theme';
 import Home from 'pages/Home';
+
+import { Tab, TabContext, TabItem, TabList, TabPanel } from 'components';
+
+import { LIGHT_THEME } from 'styles/theme';
 
 /**
  *  References:
@@ -53,7 +55,7 @@ describe('TabContext ', () => {
                     </Tab>
                 </ThemeProvider>
             )
-        ).toThrow('should use Tab inside TabContext!');
+        ).toThrow('should use Tab inside `TabContext`!');
 
         // restore
         consoleErrorFn.mockRestore();

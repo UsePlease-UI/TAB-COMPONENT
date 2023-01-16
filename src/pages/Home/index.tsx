@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
-import { Tab, TabList, TabItem, TabPanel } from 'components';
-import TabContext from 'components/TabContext/provider';
+import { Tab, TabList, TabItem, TabPanel, TabProvider as TabContext } from 'components';
 
 const tabListStyles = {
     list: {

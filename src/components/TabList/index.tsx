@@ -1,6 +1,7 @@
+/* eslint-disable react/destructuring-assignment */
 import styled from '@emotion/styled';
 
-import { ITabList, TabListStylesType } from 'components/types';
+import type { ITabList, TabListStylesType } from 'components/types';
 
 const TabListContainer = styled.div<{ customStyles?: TabListStylesType }>`
     width: 100%;

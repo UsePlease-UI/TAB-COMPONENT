@@ -2,9 +2,10 @@ import { ThemeProvider } from '@emotion/react';
 import { render } from '@testing-library/react';
 
 import { TabProvider, TabPanel } from 'components';
+
 import { LIGHT_THEME } from 'styles/theme';
 
-describe('<TabPanel /> ', () => {
+describe('<TabPanel />', () => {
     it('renders Tab Panel component', () => {
         const setValue = jest.fn();
 

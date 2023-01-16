@@ -2,9 +2,10 @@ import { ThemeProvider } from '@emotion/react';
 import { render, screen } from '@testing-library/react';
 
 import { TabProvider, TabList, TabItem } from 'components';
+
 import { LIGHT_THEME } from 'styles/theme';
 
-describe('<TabItem /> ', () => {
+describe('<TabItem />', () => {
     it('renders TabItem with given label', () => {
         const setValue = jest.fn();
         const onClick = jest.fn();

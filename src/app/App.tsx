@@ -4,6 +4,7 @@ import { ThemeProvider } from '@emotion/react';
 import styled from '@emotion/styled';
 
 import Home from 'pages/Home';
+
 import { DARK_THEME, LIGHT_THEME } from 'styles/theme';
 
 const Container = styled.div`

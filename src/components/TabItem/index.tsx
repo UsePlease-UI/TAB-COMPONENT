@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
-import { ITabItem, TabItemIconType, TabItemIndicatorType, TabItemLabelType, TabItemStylesType } from 'components/types';
 import useTabContext from 'components/TabContext/useTabContext';
+import type { ITabItem, TabItemIconType, TabItemStylesType } from 'components/types';
 
 const TabButton = styled.button<{ customStyles?: TabItemStylesType }>`
     width: 100%;

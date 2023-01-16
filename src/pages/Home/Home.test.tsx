@@ -3,6 +3,7 @@ import { render } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 
 import Home from 'pages/Home';
+
 import { LIGHT_THEME } from 'styles/theme';
 
 describe('<HOME />', () => {

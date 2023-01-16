@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { ITab } from 'components/types';
+import type { ITab } from 'components/types';
 import { getElevationStyle } from 'components/util';
 
 const TabContainer = styled.div`

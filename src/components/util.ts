@@ -1,4 +1,4 @@
-import { TabContainerElevationType } from 'components/types';
+import type { TabContainerElevationType } from 'components/types';
 
 export const getElevationStyle = (elevationLevel: TabContainerElevationType) => {
     switch (elevationLevel) {
