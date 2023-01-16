@@ -6,7 +6,7 @@
     "scripts": {
         "start": "webpack-dev-server --config config/webpack.dev.js",
         "build": "webpack --config config/webpack.prod.js",
-        "test": "jest --watch",
+        "test": "jest --watchAll",
         "coverage": "jest --collectCoverage",
         "prettier": "prettier --write --config ./.prettierrc \"**/*.{ts,tsx}\"",
         "lint": "eslint './src/**/*.{ts,tsx,js,jsx}'",
