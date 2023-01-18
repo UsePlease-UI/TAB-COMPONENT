@@ -3,13 +3,13 @@
   <h1> TAB COMPONENT </h1>
   
   <a href="https://github.com/UsePlease-UI">
-    <img src="https://img.shields.io/badge/UsePlease--UI-TAB-blue?style=for-the-badge" alt="MENU" />
+    <img src="https://img.shields.io/badge/UsePlease--UI-TAB-blue?style=for-the-badge" alt="TAB" />
   </a>
-  <img src="https://img.shields.io/badge/Duration-2023--12--01%20~%202023--12--31-ff69b4?style=for-the-badge" alt="Duration" />
+  <img src="https://img.shields.io/badge/Duration-2022--12--01%20~%202022--12--31-ff69b4?style=for-the-badge" alt="Duration" />
   <br/>
   
   <h3>👋 Introduction</h3>
-  <a href="https://github.com/namiein/UsePlease-UI-tab">
+  <a href="https://github.com/UsePlease-UI/.github/tree/main/profile">
       <img src="https://github-readme-stats.vercel.app/api/pin/?username=UsePlease-UI&repo=.github&theme=dracula" alt="Readme Card" />
   </a>
   
